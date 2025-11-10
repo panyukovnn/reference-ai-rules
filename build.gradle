@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.panyukovnn'
+version = '1.0.0-RC1'
+
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
