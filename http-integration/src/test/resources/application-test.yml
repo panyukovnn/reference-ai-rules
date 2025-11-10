@@ -1,0 +1,9 @@
+
+identity:
+  api:
+    url: http://localhost:${wiremock.server.port}
+
+reference-ai-rules:
+  integration:
+    identity:
+      host: http://localhost:${wiremock.server.port}

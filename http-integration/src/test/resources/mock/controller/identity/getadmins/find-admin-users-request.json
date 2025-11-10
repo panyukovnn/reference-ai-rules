@@ -1,0 +1,7 @@
+{
+  "name": "John",
+  "limit": 10,
+  "offset": 0,
+  "orderBy": "name",
+  "sortBy": "ASC"
+}

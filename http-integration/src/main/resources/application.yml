@@ -1,0 +1,23 @@
+
+spring:
+  application:
+    name: reference-ai-rules
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: "jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;INIT=create schema if not exists ${spring.datasource.hikari.schema};"
+    username: sa
+    password: sa
+    hikari:
+      schema: reference_ai_rules
+      connection-init-sql: CREATE SCHEMA IF NOT EXISTS ${spring.datasource.hikari.schema};
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    contexts: "h2"
+
+reference-ai-rules:
+  integration:
+    identity:
+      host: http://localhost:8081
