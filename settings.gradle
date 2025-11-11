@@ -2,4 +2,5 @@ rootProject.name = 'reference-ai-rules'
 include 'http-integration'
 include 'unit-test'
 include 'test-containers'
+include 'h2-db-and-sql-annotation-tests'
 

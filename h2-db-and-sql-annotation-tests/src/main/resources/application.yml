@@ -1,0 +1,23 @@
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+
+spring:
+  application:
+    name: reference-ai-rules
+  datasource:
+    hikari:
+      schema: reference_ai_rules
+      connection-init-sql: CREATE SCHEMA IF NOT EXISTS ${spring.datasource.hikari.schema};
+  liquibase:
+    change-log: ./db/changelog/changelog-master.yml
+    contexts: "postgres"
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

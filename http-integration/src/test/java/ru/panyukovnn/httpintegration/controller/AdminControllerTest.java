@@ -16,7 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
- * Демонстрационный тест с использованием wiremock
+ * Демонстрационный тест с использованием test containers
  * ОБРАЗЦОВЫЙ ПРИМЕР
  */
 class AdminControllerTest extends AbstractWireMockTest {
